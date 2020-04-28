@@ -3,7 +3,7 @@ service:
   - docker
 
 before_install:
-  - docker build -t nagaraju0503/angular-docker -f Dockerfile.Dev
+  - docker build -t nagaraju0503/angular-docker .
 script:
   - docker run  nagaraju0503/angular-docker -- --coverage
 
